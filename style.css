@@ -1,0 +1,203 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Space Mono', monospace;
+}
+
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #cadaeb;
+    font-family: 'Lato', sans-serif;
+    z-index: 1;
+}
+
+.calculator {
+    display: flex;
+    width: 65rem;
+    height: 33rem;
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    z-index: 5;
+    justify-content: center;
+}
+
+.buttoms {
+    justify-content: center;
+    align-items: center;
+    margin: 1vh;
+    padding: 1rem;
+    background: #fff;
+    width: 37vh;
+    height: 34vh;
+    
+}
+.buttoms ::placeholder {
+    color: #5c5d83;
+    opacity: 0.4;
+}
+.buttoms input{
+    color: #5c5d83;
+}
+
+.results {
+    justify-content: center;
+    align-items: center;
+    margin: 1vh;
+    padding: 1rem;
+    padding-top: 5rem;
+    background: #002a5e;
+    width: 37vh;
+    height: 34vh;
+    border-radius: 20px;
+}
+.results input{
+    width: 13vh;
+    font-size: xx-large;
+    text-align: end;
+    background: none;
+    color: #2eaebb !important;
+   
+}
+.resulstTitle{
+    color: white;
+    text-align: left;
+}
+.personP{
+    color: rgba(255, 255, 255, 0.304);
+    text-align: left;
+}
+.titlesInResults{
+    display:inline-block;
+    text-align: start;
+}
+.results ::placeholder {
+    color: #2eaebb;
+    opacity: 1; /* Firefox */
+  }
+
+h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 10.5vh;
+}
+
+button {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #002a5e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    padding: 16px;
+    width: 13.28vh;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonReset {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #2eaebb;
+    border: none;
+    color: #002a5e;
+    text-align: center;
+    font-size: 24px;
+    padding: 16px;
+    width: 27.5vh;
+    margin-top: 1.8rem;
+}
+#btnQuince{
+    background-color: #2eaebb;
+    color: #002a5e;
+}
+
+.buttonCustom {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #f5f5fd;
+    border: none;
+    color: #5c5d83;
+    text-align: center;
+    font-size: 24px;
+    padding: 16px;
+    width: 13.28vh;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+input {
+    border: none;
+    border-radius: 6px;
+    background: #f5f5fd;
+    height: 3rem;
+    width: 27.5vh;
+    margin: 0.5vh;
+    text-align: left;
+    padding: 1rem;
+    font-size: 17px;
+    -webkit-appearance: none;
+}
+img{
+                 
+    height: 60vh;
+    width: auto;
+    position: fixed;
+    bottom: -20%;
+    left: -5%;
+    z-index: 3;
+    opacity: 0.4;
+}
+@media (max-width:720px) {
+    img{
+                 
+        height: 25vh;
+        width: auto;
+        position: fixed;
+        top: 11%;
+        left: -14%;
+        z-index: 3;
+        opacity: 0.6;
+    }
+    .calculator {
+        display: flex;
+        flex-flow: column;
+        height: 56rem;
+        margin-top: 71.2%;
+        border-radius: 30px 30px 0 0;
+        padding-top: 8%;
+        z-index: 5;
+    }
+    .background {
+        position: relative;
+        z-index: 1;
+    }
+    .results {
+        height: 25vh;
+        width: 33vh;
+        padding-top: 3rem;
+    }
+    h3 {
+        margin-top: 3vh;
+    }
+    #a {
+        order: 1
+    }
+    ;
+    #b {
+        order: 2
+    }
+    ;
+    
+   
+}

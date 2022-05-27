@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Tip calculator</title>
+</head>
+
+<body>
+    <div class="background">
+        <img src="percentage-sign-svgrepo-com.svg" alt="">
+        <div class="calculator">
+            <div id=a class="buttoms">
+                <!-- buttons -->
+                <form>
+                    <input type="number" id="billTotal" placeholder="Bill"><br>
+                    <input type="number" id="people" placeholder="# of people"><br>
+                </form>
+                <br>
+                <button onclick="calculateTip(5, 10)" type="button">5%</button>
+                <button onclick="calculateTip(10)" type="button">10%</button>
+                <button onclick="calculateTip(15)" id="btnQuince" type="button">15%</button>
+                <button class="buttonCustom" type="button">Custom</button>
+                <br>
+                <a href="./index.html">
+                    <button class="buttonReset" type="button">Reset</button>
+                </a>
+                <!-- buttons -->
+            </div>
+            <!-- results -->
+            <div id=b class="results">
+                <div class="titlesInResults">
+                    <p class="resulstTitle">Tip amount</p>
+                    <p class="personP">/ person</p>
+                </div>
+                <label>
+                    <input disabled="disabled" type="text" id="amount" placeholder="$ 0" />
+                </label>
+                <br>
+                <br>
+                <div class="titlesInResults">
+                    <p class="resulstTitle">Total</p>
+                    <p class="personP">/ person</p>
+                </div>
+                <label>
+                    <input disabled="disabled" type="text" id="total" placeholder="$ 0" />
+                </label>
+                <h3>Total</h3>
+            </div>
+            <!-- results -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
